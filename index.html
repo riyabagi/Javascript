@@ -9,6 +9,7 @@
         .className {
             font-size: 20px;
             font-weight: bold;
+            /* color: red; */
         }
     </style>
 </head>
@@ -21,13 +22,10 @@
     <button id="btn">Click Me</button>
 
     <script>
-        // Change text inside the h1 element with ID 'demo'
         document.getElementById("demo").innerHTML = "Hello, Riya!";
 
-        // Change text color using class selector
         document.querySelector(".className").style.color = "red";
 
-        // Event listener for button click
         document.getElementById("btn").addEventListener("click", function () {
             alert("Button Clicked!");
         });
