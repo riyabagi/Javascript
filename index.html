@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        .className {
+            font-size: 20px;
+            font-weight: bold;
+            /* color: red; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="demo">Original Text</h1>
+    <p class="className">This text will turn red.</p>
+
+    <button id="btn">Click Me</button>
+
+    <script>
+        document.getElementById("demo").innerHTML = "Hello, Riya!";
+
+        document.querySelector(".className").style.color = "red";
+
+        document.getElementById("btn").addEventListener("click", function () {
+            alert("Button Clicked!");
+        });
+    </script>
+
+</body>
+
+</html>
